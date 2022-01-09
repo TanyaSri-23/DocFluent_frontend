@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocFluent | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       * {
+    box-sizing: border-box;
+
+} 
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    padding: 40px;
+    background-color: rgb(17, 124, 143);
+}
+header h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    color: black;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+section h3 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: black;
+}
+.vertical {
+            border-left: 6px solid black;
+            height: 200px;
+            position:absolute;
+            left: 50%;
+        }
+section p{
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>DocFluent</h1>
+
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">Document Translation </a>
+        &nbsp;&nbsp;&nbsp;&nbsp; 
+        <!-- <a href="#">Literary Translation </a> -->
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">About us</a>
+    </nav>
+
+        
+    <main>
+        
+        <section>
+                <img src="2dd2a225-d678-42c6-ac45-38216e7f372f.jpg" alt="" width="30%" class="center">
+            <img src="language barrrier.jpeg" alt="" width="90%" class="centre">
+
+        </section>
+        <section>
+        <h3><em>Document Translation</em></h3>
+        <p>
+            DocFluent allows you to translate different file formats like Word, Pdfs, Markdown, to the language of your choice for free of cost!
+            There are as many as *32* language pairs that you can translate your Document into.
+        </p>
+
+            
+        </section>
+<section>
+    <div id="WorkPlaceHolder">
+        <form name="form1" method="post" enctype="multipart/form-data" action="/translation/total/translationdocument">
+            <div id="inputTypesContainer" class="ocrSizes" role="group">
+                <label class="custom-file-upload upfile selected" onclick="selectCamera(3)">
+                    Upload file
+                </label>
+                <!-- <label class="custom-file-upload upurl nonselecteduploadoption" onclick="selectCamera(2);">
+                    <i></i>
+                    URL
+                </label> -->
+            </div>
+
+
+            <!-- <input class="hidden" name="inLang" id="inLang" value="" />
+            <input class="hidden" name="outLang" id="outLang" value="" />
+            <input class="hidden" id="locale" value="en" /> -->
+    
+            <div class="row inputsection justify-content-center">
+                <div class="col-sm-5 col-md-5 nopdng mobilehead ordrforrtl justend">
+                    <div class="saveas">
+                        <label  style="color:white; font-size:20px" class="label-btn-group" for="saveAs"></label>
+                        <div class="btn-group">
+                            <select id="inputLang" name="fromLanguage" style="font-size:20px" class="dropdown" CssClass="select2" onchange="changes();">
+                                    <option value="en">English</option>
+                                    <option value="gu-IN">&#xA;Gujarati (India)</option>
+                                    <option value="hi">&#xA;Hindi</option>
+                                    <option value="it">&#xA;Italian</option>
+                                    <option value="es">&#xA;Spanish</option>
+                                    <option value="pt">&#xA;Portuguese</option>
+                                    <option value="pl">&#xA;Polish</option>
+                                    <option value="ru">&#xA;Russian</option>
+                                    <option value="zh">&#xA;Chinese</option>
+                                    <option value="ar">&#xA;Arabic</option>
+                                    <option value="uk">&#xA;Ukrainian</option>
+                                    <option value="vi">&#xA;Vietnamese</option>
+                                    <option value="id">&#xA;Indonesian</option>
+                                    <option value="hi">&#xA;Hindi</option>
+                            </select>
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="col-md-mysize nopdng ordrforrtl1">
+                    <div class="invbuttonw">
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-5 nopdng">
+                    <div class="saveas">
+                        <label  style="color:white; font-size:20px" class="label-btn-group" for="saveAs"></label>
+        
+                        <div class="btn-group">
+                            <select id="outputLang" name="toLanguage" style="font-size:20px" class="dropdown" CssClass="select2" onchange="">
+                                        <option value="en">English</option>
+                                        <option selected value="fr">&#xA;French</option>
+                                        <option value="de">&#xA;German</option>
+                                        <option value="it">&#xA;Italian</option>
+                                        <option value="es">&#xA;Spanish</option>
+                                        <option value="pt">&#xA;Portuguese</option>
+                                        <option value="pl">&#xA;Polish</option>
+                                        <option value="ru">&#xA;Russian</option>
+                                        <option value="zh">&#xA;Chinese</option>
+                                        <option value="ar">&#xA;Arabic</option>
+                                        <option value="uk">&#xA;Ukrainian</option>
+                                        <option value="vi">&#xA;Vietnamese</option>
+                                        <option value="id">&#xA;Indonesian</option>
+                                        <option value="hi">&#xA;Hindi</option>
+                            </select>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="padding: 0;">
+                </div>
+            </div>
+</section>
+<div class="row">
+        <div class="col-md-12" style="padding: 0;">
+        </div>
+    </div>
+    <div id="filesUploadBlock" class="fcontainer">
+        <div class="filedrop-container width-for-mobile">
+            <div class="filedrop filedrop-mvc fileplacement width-for-mobile" id="filedrop" ondragover="event.preventDefault();" ondrop="imgdropped(event);">
+                <label for="UploadFileInput" class="uplbl" id="labelforuploadfile">
+                    <span class="uploadlabel labelforuploadfile" id="uploadlabel">Click to browse</span>
+                    <p class="DropUploadFiles">Drop or upload your file *</p>
+                    <!-- <p style="text-align:center;">.</p> -->
+    
+                </label>
+    
+                            <input type="file" class="uploadfileinput" id="UploadFileInput" name="UploadFileInput" accept=".DOC,.DOCX,.DOCM,.XLS,.XLSX,.XLSM,.PPT,.PPTX,.PPTM,.TXT,.DOCUMENT,.PDF,.MD" style="display:none;" />
+    
+    
+                <div id="fileUpload" class="inputedfilealign" style="display:none;">
+                    <span class="filename filenameExt">
+                        <a onclick="removefile()" class="crossremove">
+                            <label id="fileNameLabel" for="uploadfileinput">
+                            </label>
+                            <svg class="icon icon_criss_cross"><use xlink:href="/translation/total/img/symbol-defs.svg#criss-cross"></use></svg>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <div id="filedrop-input-url" class="fileupload file-upload-input-container" style="display:none">
+        <span class="filename">
+            <div class="filedrop-container width-for-mobile inputURL">
+                <input type="text" id="externalUrlInput" onkeyup="inputurl(event);" oninput="inputurl(event);" onchange="inputurlmobile();" class="form-control externalUrlInput" name="externalUrlInput" placeholder="Enter file URL (with http(s))">
+                <input class="hidden" name="fileLink" id="fileLink" value="none" />
+                <span class="fileLinkHolder" id="fileUrlHolder">
+    
+                    <div class="file-link-holder-cancel1" id="cnsltxt" style="display:none;">
+                        <svg class="icon icon_criss_cross_url1" onclick="inputurlmobile();"><use xlink:href="/translation/total/img/symbol-defs.svg#icon-check1"></use></svg>
+                        <a onclick="removeurlmobile();">
+                            <svg class="icon icon_cnsl"><use xlink:href="/translation/total/img/symbol-defs.svg#criss-cross"></use></svg>
+                        </a>
+                    </div>
+                </span>
+                <div class="inputedurlalign" id="inputedurlalign" style="display:none;">
+                    <label id="urlNameLabel" for="externalUrlInput" class="custom-url-upload"></label>
+                    <div class="yescancel">
+                        <svg class="icon icon_criss_cross_url" onclick="removeurlmobile();"><use xlink:href="/translation/total/img/symbol-defs.svg#criss-cross"></use></svg>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+    <div class="terms-area" style="margin-bottom:20px">
+                                <span>*By uploading your files or using our service you agree with our </span>
+                            <a href="https://about.groupdocs.app/legal/tos" rel="nofollow noreferrer" target="_blank">Terms of Service</a>
+                            <span> and </span>
+                            <a href="https://about.groupdocs.app/legal/privacy-policy" rel="nofollow noreferrer" target="_blank">Privacy Policy</a>
+                            </div>
+
+                            <div class="ocrAppRowSmall">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-4">
+                                        <div class="saveas">
+                                            <label  style="color:white; font-size:20px" class="label-btn-group" for="saveAs"></label>
+
+                                            <div class="btn-group">
+                                                <select id="convertFormat" name="outFormat" style="font-size:20px" class="dropdown" CssClass="select2" onchange="">
+                                                    <option value="" disabled selected style="display:none;">Convert to</option>
+                                                    <option value="">Input Format</option>
+                                                        <option disabled value="docx">DOCX</option>
+                                                        <option disabled value="md">MD</option>
+                                                        <option disabled value="pdf">PDF</option>
+                                                        
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button id="translationbutton" disabled type="submit" class="btn btn-success btn-lg startTranslationButtton forsafary" onclick="ShowPart();">Translate</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="hidden" name="extension" onchange="" />
+                        </form>
+                    </div>
+                    <div class="ocrAppRowSmallest">
+                        <div id="translationLoader" class="spinner-border text-success" role="status" style="display:none;">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+            </div>
+
+
+            <div id="alertPlaceHolder" class="col-md-12">
+                <br />
+                <p id="alertMessage" class="alert alert-danger d-none"></p>
+                <p id="alertSuccess" class="alert alert-success d-none"></p>
+            </div>
+
+            <!-- <div id="loaderPlaceHolder">
+                <div id="loader" class="d-none" role="status" aria-hidden="true">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width: 15%">15%</div>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- <div class="hiddenData">
+                <span id="maxFileSize">50</span>
+                <span id="basicAppUrlPath">translation/total</span>
+                <span id="basicAppUrlEndpoint">translation/total/translationdocument</span>
+            </div> -->
+        <!-- </div>
+<div class="row justify-content-center" style="flex-direction: row; flex-wrap:wrap;">
+    <div class="col-md-12" style="display:contents;">
+            <a class="btn-link-other-prod" href=../../translation/text><span class="appbtnlbl">Translate Text</span></a>
+            <a class="btn-link-other-prod" href=../../translation/pdf><span class="appbtnlbl">Translate PDF</span></a>
+            <a class="btn-link-other-prod" href=../../translation/word><span class="appbtnlbl">Translate Word</span></a>
+            <a class="btn-link-other-prod" href=../../translation/excel><span class="appbtnlbl">Translate Excel</span></a>
+            <a class="btn-link-other-prod" href=../../translation/powerpoint><span class="appbtnlbl">Translate Powerpoint</span></a>
+            <a class="btn-link-other-prod" href=../../translation/markdown><span class="appbtnlbl">Translate Markdown</span></a> -->
+    </div>
+</div>
+
+
+<h2>How to translate Document</h2>
+<img src="contract-icon-agreement_149152-376.jpg" alt="" width="5%">
+<h5>Upload the File</h5>
+<p>Drag and drop your file or browse on your device to upload it.</p>
+<img src="language.png" alt="" width="5%">
+<h5>Select the Language</h5>
+<p>Select the language of document and the language to which you wish to translate the document into.</p>
+<img src="wait.png" alt="" width="5%">
+<h5>Click Translate and Wait</h5>
+<p>Wait till your file gets translated</p>
+<img src="result.png" alt="" width="5%">
+<h5>Download</h5>
+<p>Download Results in the same format as the uploaded file.</p>
+ <section>
+     <img src="download.png" alt="" width="50%">
+<p> Around 121 languages are spoken in India alone! With such a diversity, the Langauge becomes a barrier in mode of communication rather being a medium for conversation. Machine Translation has become the most vital tool and we have used it to overcome all language barriers to ensured efficient and effcective treanslation of your documnet files.   </p>
+ </section> 
+
+</main>
+<footer>
+    <a href="#">FAQ</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">Contact us</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">Terms of Use</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">Privacy Policy</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">&copy; 2022 DocFluent</a>
+
+    <a href="#" class="fa fa-facebook"></a>  
+    &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" class="fa fa-twitter"></a>  
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" class="fa fa-pinterest"></a> 
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" class="fa fa-linkedin"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" class="fa fa-instagram"></a>  
+&nbsp;&nbsp;&nbsp;&nbsp;
+</footer>
+</body>
+</html>
